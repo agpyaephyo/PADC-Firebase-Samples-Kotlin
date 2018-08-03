@@ -14,10 +14,6 @@ class NewsFeedsAdapter(context: Context) : BaseRecyclerAdapter<NewsFeedViewHolde
     }
 
     override fun onBindViewHolder(holder: NewsFeedViewHolder, position: Int) {
-
-    }
-
-    override fun getItemCount(): Int {
-        return 16
+        holder.bind(mData[position])
     }
 }

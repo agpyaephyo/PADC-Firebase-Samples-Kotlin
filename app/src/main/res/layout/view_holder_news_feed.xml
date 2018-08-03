@@ -14,7 +14,7 @@
         android:background="@color/white_full">
 
         <ImageView
-            android:id="@+id/iv_profile"
+            android:id="@+id/ivProfile"
             android:layout_width="@dimen/news_feed_profile_size"
             android:layout_height="@dimen/news_feed_profile_size"
             android:layout_marginLeft="@dimen/margin_medium"
@@ -22,24 +22,24 @@
             android:src="@mipmap/ic_news_from_people" />
 
         <TextView
-            android:id="@+id/tv_user_name"
+            android:id="@+id/tvUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/iv_profile"
+            android:layout_alignTop="@id/ivProfile"
             android:layout_marginLeft="@dimen/margin_medium"
             android:layout_marginTop="@dimen/margin_small"
-            android:layout_toRightOf="@id/iv_profile"
+            android:layout_toRightOf="@id/ivProfile"
             android:fontFamily="sans-serif-condensed"
             android:text="@string/launcher_name"
             android:textColor="@color/primary_text"
             android:textSize="@dimen/text_regular" />
 
         <org.mmtextview.components.MMTextView
-            android:id="@+id/tv_posted_date"
+            android:id="@+id/tvPostedDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/tv_user_name"
-            android:layout_below="@id/tv_user_name"
+            android:layout_alignLeft="@id/tvUsername"
+            android:layout_below="@id/tvUsername"
             android:layout_marginTop="@dimen/margin_small"
             android:fontFamily="sans-serif-light"
             android:text="@string/tv_format_posted_date"
@@ -47,11 +47,11 @@
             android:textSize="@dimen/text_small" />
 
         <org.mmtextview.components.MMTextView
-            android:id="@+id/tv_feed_msg"
+            android:id="@+id/tvFeedMsg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/iv_profile"
-            android:layout_below="@id/iv_profile"
+            android:layout_alignLeft="@id/ivProfile"
+            android:layout_below="@id/ivProfile"
             android:layout_marginRight="@dimen/margin_medium"
             android:layout_marginTop="@dimen/margin_medium"
             android:lineSpacingMultiplier="1.2"
@@ -63,19 +63,19 @@
             />
 
         <ImageView
-            android:id="@+id/iv_feed_image"
+            android:id="@+id/ivFeedImage"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:layout_below="@id/tv_feed_msg"
+            android:layout_below="@id/tvFeedMsg"
             android:layout_marginBottom="@dimen/margin_small"
             android:layout_marginTop="@dimen/margin_medium_2"
             android:src="@drawable/placeholder_news_two" />
 
         <org.mmtextview.components.MMTextView
-            android:id="@+id/tv_total_reactions"
+            android:id="@+id/tvTotalReactions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iv_feed_image"
+            android:layout_below="@id/ivFeedImage"
             android:paddingLeft="@dimen/margin_medium"
             android:text="3 Likes 4 Comments"
             android:textColor="@color/primary_dark"
@@ -85,7 +85,7 @@
             android:id="@+id/ll_feed_actions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_total_reactions"
+            android:layout_below="@id/tvTotalReactions"
             android:orientation="horizontal">
 
             <FrameLayout

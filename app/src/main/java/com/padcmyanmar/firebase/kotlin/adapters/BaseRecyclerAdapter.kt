@@ -10,7 +10,7 @@ abstract class BaseRecyclerAdapter<T : BaseViewHolder<W>, W>(context: Context) :
 
     protected var mLayoutInflater: LayoutInflater = LayoutInflater.from(context)
 
-    private var mData: MutableList<W> = ArrayList()
+    internal var mData: MutableList<W> = ArrayList()
 
     init {
         mData = ArrayList()

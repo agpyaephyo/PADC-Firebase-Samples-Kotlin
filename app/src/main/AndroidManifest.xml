@@ -3,7 +3,7 @@
     package="com.padcmyanmar.firebase.kotlin">
 
     <application
-        android:name=".FirebaseApp"
+        android:name=".FirebaseKotlinApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_news_from_people"
         android:label="@string/app_name"
